@@ -40,3 +40,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# json server db.json
+**/*.log
+node_modules
+tmp
+lib
+.DS_Store
+.idea
+package-lock.json
