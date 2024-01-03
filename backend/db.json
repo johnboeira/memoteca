@@ -1,5 +1,5 @@
 {
-  "pensamentos":[
+  "pensamentos": [
     {
       "id": 2,
       "conteudo": "teste 1",
@@ -17,6 +17,12 @@
       "conteudo": "teste 3",
       "autoria": "dev 3",
       "modelo": "modelo3"
+    },
+    {
+      "conteudo": "novo pensamento",
+      "autoria": "dev",
+      "modelo": "modelo1",
+      "id": 7
     }
   ]
 }
