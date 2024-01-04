@@ -13,12 +13,6 @@
       "modelo": "modelo2"
     },
     {
-      "id": 6,
-      "conteudo": "teste 3",
-      "autoria": "dev 3",
-      "modelo": "modelo3"
-    },
-    {
       "conteudo": "novo pensamento",
       "autoria": "dev",
       "modelo": "modelo1",
