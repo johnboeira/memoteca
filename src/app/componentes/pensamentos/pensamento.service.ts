@@ -25,4 +25,14 @@ export class PensamentoService {
     return this.httpClient.delete<Pensamento>(url);
   }
 
+  selecionarPorId(id: number){
+    const url = `${this.API}/${id}`;
+    return this.httpClient.get<Pensamento>(url);
+  }
+
+  editar(pensamento: Pensamento){
+    const url = `${this.API}/${pensamento.id}`;
+    return this.httpClient.put<Pensamento>(url, pensamento);
+  }
+
 }

@@ -13,9 +13,9 @@
       "modelo": "modelo2"
     },
     {
-      "conteudo": "novo pensamento",
-      "autoria": "dev",
-      "modelo": "modelo1",
+      "conteudo": "pensamento editado",
+      "autoria": "dev editado",
+      "modelo": "modelo2",
       "id": 7
     }
   ]
