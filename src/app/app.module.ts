@@ -30,7 +30,8 @@ import { BotaoCarregarMaisComponent } from './componentes/pensamentos/listar-pen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
