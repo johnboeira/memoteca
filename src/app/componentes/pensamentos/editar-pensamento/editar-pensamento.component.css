@@ -142,6 +142,5 @@ input[type='radio']:checked+.custom-radio span {
 
 .botao__desabilitado {
   margin: 5px;
-  margin-top: 70px;
   width: 250px;
 }
