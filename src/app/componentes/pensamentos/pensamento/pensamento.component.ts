@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Pensamento } from '../pensamento';
 
 @Component({
@@ -12,10 +12,9 @@ export class PensamentoComponent implements OnInit {
     id: 0,
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: '',
+    favorito: false
   }
-
-  constructor() { }
 
   larguraPensamento(): string{
     if(this.pensamento.conteudo.length >= 256){
@@ -27,4 +26,11 @@ export class PensamentoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mudarIconeFavorito(): string {
+    if(this.pensamento?.favorito == false){
+      return 'inativo';
+    }else{
+      return 'ativo';
+    }
+  }
 }
