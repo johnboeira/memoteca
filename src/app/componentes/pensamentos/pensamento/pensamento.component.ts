@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Pensamento } from '../pensamento';
+import { PensamentoService } from '../pensamento.service';
 
 @Component({
   selector: 'app-pensamento',
@@ -15,6 +16,10 @@ export class PensamentoComponent implements OnInit {
     modelo: '',
     favorito: false
   }
+
+  constructor(
+    private pensamentoService: PensamentoService
+  ){}
 
   larguraPensamento(): string{
     if(this.pensamento.conteudo.length >= 256){
@@ -32,5 +37,9 @@ export class PensamentoComponent implements OnInit {
     }else{
       return 'ativo';
     }
+  }
+
+  atualizarFavorito(){
+    this.pensamentoService.mudarFavorito(this.pensamento).subscribe();
   }
 }
